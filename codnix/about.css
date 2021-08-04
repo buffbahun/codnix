@@ -1,0 +1,107 @@
+.nav ul li:first-child{
+
+    border-bottom: solid black 8px;
+
+}
+
+.abt{
+
+    padding: 5vh 10vw;
+
+}
+
+.abt>.top{
+
+    display: grid;
+    grid-template-areas: "tm tm tm"
+                         "ia cd crv";
+    gap: 20px;
+
+}
+
+.abt>.top h2{
+
+    
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+
+}
+
+.abt>.top p{
+
+    font-size: 1.2em;
+    letter-spacing: 2px;
+
+}
+
+.team{
+    grid-area: tm;
+}
+
+
+.ia{
+    grid-area: ia;
+}
+
+.cd{
+    grid-area: cd;
+}
+
+.crv{
+    grid-area: crv;
+}
+
+.abt>article{
+    /* padding: 50px; */
+    background-color: white;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 30px;
+}
+
+.abt>article>div{
+    padding: 50px;
+
+}
+
+.abt>article>.qt{
+
+    background-color: #fbfbfb;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+
+}
+
+.abt>article>.pth img{
+
+    width: 700px;
+
+}
+
+.abt .ot{
+
+    padding: 30px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.abt>.ot h2{
+
+    margin-bottom: 10px;
+    font-size: 2em;
+    grid-column: 1 / 5;
+    text-align: center;
+
+}
+
+.abt>.ot picture img{
+
+    border-radius: 20px;
+    width: 17vw;
+
+}
