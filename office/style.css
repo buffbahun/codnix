@@ -108,6 +108,28 @@ header>nav>.logo_nav{
 
 }
 
+nav>.logo_nav>.nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_nav>.nav>picture{
+
+    width: 40px;
+    /* border: solid; */
+    display: none;
+
+}
+
+.nav>picture>img{
+
+    width: 100%;
+
+}
+
 nav>.logo_nav>.nav ul{
 
     display: flex;
@@ -234,5 +256,76 @@ header>.sell{
     text-align: center;
     font-size: 1.4em;
     letter-spacing: 3px;
+
+}
+
+@media (max-width: 750px) {
+
+    header>nav>.media{
+
+        display: none;
+
+    }
+
+    .logo_nav>.logo h1{
+
+        position: static;
+        font-size: 2.5em;
+
+    }
+
+    header>nav>.logo_nav{
+
+        padding: 0 15px;
+
+    }
+    
+    .logo_nav>.nav>picture{
+
+        padding-top: 5px;
+        display: block;
+        justify-content: flex-end;
+
+    }    
+
+    nav>.logo_nav>.nav{
+
+        /* border: solid; */
+        display: block;
+        position: relative;
+
+    }
+
+    nav>.logo_nav>.nav>ul{
+
+        position: absolute;
+        display: none;
+        /* border-top: solid; */
+        padding: 20px 50px;
+        left: -41.5vw;;
+        width: 50vw;
+        background-color: white;
+
+    }
+
+    nav>.logo_nav>.nav ul li{
+
+        border-bottom: none;
+        margin-bottom: 30px;
+
+    }
+
+    nav>.logo_nav>.nav ul li:hover{
+
+        border-bottom: 0;
+
+    }
+
+
+    nav>.logo_nav>.nav:hover>ul{
+
+        display: block;
+        /* transition: width .5s ease-in-out; */
+    }
 
 }
