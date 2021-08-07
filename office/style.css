@@ -9,12 +9,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: solid red; */
 
 }
 
 header{
 
     background-color: #eeeeee;
+    /* border: solid; */
 
 }
 
@@ -25,6 +27,7 @@ header>nav>.media{
     display: flex;
     justify-content: flex-end;
     /* padding-left: 50px; */
+    /* border: solid red; */
 
 }
 
@@ -52,6 +55,7 @@ nav>.media>ul{
 .media>ul li{
 
     transition: all .3s ease-in-out;
+    /* border: solid red; */
 
 }
 
@@ -105,6 +109,7 @@ header>nav>.logo_nav{
     font-size: 5.5em;
     top: -60px;
     left: -200px;
+    /* border: solid red; */
 
 }
 
@@ -135,6 +140,7 @@ nav>.logo_nav>.nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    /* border: solid red; */
 
 }
 
@@ -144,8 +150,9 @@ nav>.logo_nav>.nav ul{
     /* border: solid; */
     padding: 5px 7px;
     border-bottom: solid 6px white;
-    font-size: 1.2em;
+    /* font-size: 100%; */
     letter-spacing: 3px;
+    /* width: 160px; */
 
 }
 
@@ -160,6 +167,7 @@ header .sub_nav{
 
     margin-top: 50px;
     background: center/100% no-repeat url('it.jpg');
+    box-shadow: 0px 10px 12px grey;
 
 }
 
@@ -186,8 +194,8 @@ header .sub_nav{
 
 .sub_nav ul li{
 
-    color: white;
-    opacity: .5;
+    color: #fff;
+    opacity: .75;
     cursor: pointer;
 
 }
@@ -195,6 +203,7 @@ header .sub_nav{
 .sub_nav ul li:hover{
 
     opacity: 1;
+    /* color: white; */
 
 }
 
@@ -203,8 +212,13 @@ header .sub_nav{
     padding: 20px;
     font-size: 1.5em;
     letter-spacing: 3px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    align-items: center;
 
 }
+
 
 .sb>ul{
 
@@ -214,6 +228,7 @@ header .sub_nav{
     padding: 0 50px;
     background: black;
     opacity: .8;
+    /* border: solid red; */
 
 }
 
@@ -221,7 +236,7 @@ header .sub_nav{
 
     padding: 5px 10px;
     letter-spacing: 3px;
-    font-size: 1.6em;
+    font-size: 150%;
     border-bottom: solid 5px transparent;
 
 }
@@ -229,7 +244,7 @@ header .sub_nav{
 .sb>ul li:hover{
 
     border-bottom: solid 5px white;
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 
 }
 
@@ -256,6 +271,34 @@ header>.sell{
     text-align: center;
     font-size: 1.4em;
     letter-spacing: 3px;
+
+}
+
+main{
+
+    padding: 4vh 10vw;
+
+}
+
+main>.work>h1{
+
+    font-size: 2.7em;
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+main>.work>section{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 6px;
+
+}
+
+.work>section picture img{
+
+    width: 100%;
 
 }
 
@@ -326,6 +369,27 @@ header>.sell{
 
         display: block;
         /* transition: width .5s ease-in-out; */
+    }
+
+    .sub_nav ul li{
+
+        opacity: 1;
+        /* border: solid; */
+
+    }
+
+    
+
+    main{
+
+        padding: 0;
+
+    }
+
+    main>.work>section{
+
+        grid-template-columns: 1fr;
+
     }
 
 }
