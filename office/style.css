@@ -26,9 +26,11 @@ nav{
 
 header>nav>.media{
 
-    padding: 10px 50px;
+    padding: 5px 20vw;
+    /* padding-bottom: 5px; */
     background-color: white;
     display: flex;
+    /* display: none; */
     justify-content: flex-end;
     /* padding-left: 50px; */
     /* border: solid red; */
@@ -41,7 +43,7 @@ nav>.media>ul{
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
-    padding-right: 50px;
+    /* padding-right: 50px; */
 
 }
 
@@ -52,7 +54,7 @@ nav>.media>ul{
     width: fit-content;
     border: solid 2px white;
     border-radius: 80px;
-    width: 50px;
+    width: 40px;
 
 }
 
@@ -95,7 +97,7 @@ header>nav>.logo_nav{
     background-color: white;
     display: flex;
     justify-content: space-between;
-    column-gap: 5vw;
+    column-gap: 3vw;
 
 }
 
@@ -112,7 +114,7 @@ header>nav>.logo_nav{
     position: absolute;
     /* font-sisze: 5.5em; */
     top: -45px;
-    /* left: -200px; */
+    left: -100px;
     /* border: solid red; */
 
 }
@@ -142,6 +144,7 @@ nav>.logo_nav>.nav{
 nav>.logo_nav>.nav ul{
 
     display: flex;
+    column-gap: 5vw;
     list-style-type: none;
     justify-content: space-between;
     /* border: solid red; */
@@ -150,12 +153,16 @@ nav>.logo_nav>.nav ul{
 
 .logo_nav>.nav ul li{
 
-    margin: 0 10px;
+    font-weight: 600;
+    /* margin: 0 10px; */
     /* border: solid; */
-    padding: 5px 7px;
+    /* min-width: 100px; */
+    padding: 2px 5px;
     border-bottom: solid 6px white;
-    /* font-size: 100%; */
+    font-size: .8vw;
+    text-align: center;
     letter-spacing: 3px;
+    flex: 1 0 auto;
     /* width: 160px; */
 
 }
@@ -171,31 +178,34 @@ header>nav .nav .md{
     display: none;
 }
 
-header .sub_nav{
+header article.sub_nav{
 
     margin-top: 50px;
-    transition: all ease-in-out .3s;
-    /* height: 50vh; */
-    /* background: center/100% no-repeat url('archi.jpg'); */
+    transition: all ease-in-out .5s;
     box-shadow: 0px 2px 4px grey, 0px -2px 4px grey;
 
 }
 
+
+
+
 header>article.one{
     background: center/100% no-repeat url('archi.jpg');
-    transition: all ease-in-out .3s;
+    /* background-position: 100%; */
+    transition: all ease-in-out .5s;
+
 
 }
 
 header>article.two{
-    background: center/100% 140% no-repeat url('civil1.jpg');
-    transition: all ease-in-out .3s;
+    background: center/100% no-repeat url('it.jpg');
+    transition: all ease-in-out .5s;
 
 }
 
 header>article.three{
-    background: center/100% no-repeat url('it.jpg');
-    transition: all ease-in-out .3s;
+    background: center/100% no-repeat url('civil1.jpg');
+    transition: all ease-in-out .5s;
 
 }
 
@@ -291,7 +301,7 @@ header>article.three{
 .sub>ul li{
 
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.1vw;
     letter-spacing: 3px;
     display: flex;
     justify-content: flex-end;
@@ -309,6 +319,7 @@ header>article.three{
 .sb>ul{
 
     display: flex;
+    /* flex-direction: row-reverse; */
     justify-content: space-between;
     list-style-type: none;
     padding: 0 50px;
@@ -322,9 +333,16 @@ header>article.three{
 
     padding: 5px 10px;
     letter-spacing: 3px;
-    font-size: 150%;
+    font-size: 1.3vw;
+    text-align: center;
     border-bottom: solid 5px transparent;
 
+}
+
+.sb>ul>li>span>img{
+    display: none;
+    /* border: solid red; */
+    /* vertical-align: center; */
 }
 
 .sb>ul>li.one{
@@ -347,6 +365,8 @@ header>article.three{
     opacity: 1;
 
 }
+
+
 
 .sb>ul li:hover{
 
@@ -433,9 +453,12 @@ main>.work>section{
 
     }
 
-    header .sub_nav{
+    header article.sub_nav{
 
+        /* opacity: .5; */
+        /* background-position: 100%; */
         background: none;
+        box-shadow: none;
         /* background-color: white; */
 
     }
@@ -465,13 +488,13 @@ main>.work>section{
 
         position: static;
         /* font-size: 2.5em; */
-        width: 80px;
+        width: 100px;
 
     }
 
     header>nav>.logo_nav{
 
-        padding: 0 15px;
+        padding: 20px 15px;
 
     }
     
@@ -499,23 +522,28 @@ main>.work>section{
         border-bottom: solid;
         padding: 20px 50px;
         left: 0vw;
-        top: 60px;
+        top: 100px;
         width: 100%;
         background-color: white;
         z-index: 1;
 
     }
 
-    nav>.logo_nav>.nav ul li{
+    nav>.logo_nav>.nav>ul>li{
 
         border-bottom: none;
         margin-bottom: 30px;
+        font-size: 120%;
+        letter-spacing: 4px;
+        /* border-bottom: solid 3px transparent; */
 
     }
 
     nav>.logo_nav>.nav ul li:hover{
 
-        border-bottom: 0;
+        border-bottom: none;
+        /* border-bottom: solid 3px #ff0d00; */
+        color: #ff0d00;
 
     }
 
@@ -535,39 +563,67 @@ main>.work>section{
     .sb>ul{
 
         display: block;
-        background-color: white;
+        /* overflow-x: scroll; */
+        background-color: #4dbabe40;
         padding: 0;
+        /* border: solid 2px #4dbabeffs; */
+        padding: 50px 0;
+        box-shadow: none;
 
     }
 
     .sb>ul li{
 
+        /* width: 100vw; */
         border: none;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
+        /* margin-top: 20px; */
+        font-size: 100%;
 
     }
 
-
     .sb>ul li:hover{
         border: none;
-        border-bottom: solid grey 1px;
+        /* border-bottom: solid grey 10px; */
+
+    }
+
+    .sb>ul>li.one,.sb>ul>li.two,.sb>ul>li.three{
+
+        border-bottom: none;
+
+    }
+
+    .sb>ul li:hover span img{
+
+        transform: rotate(0.5turn);
+
+    }
+
+    .sb>ul>li>span>img{
+        display: inline-block;
+        /* border: solid; */
+        margin-bottom: -8px;
     }
 
     .sb .mob{
 
-        margin-top: 5px;
+        margin-top: 2px;
         display: block;
         display: none;
         list-style-type: none;
-        background-color: black;
+        /* background-color: black; */
         padding: 15px;
         border-radius: 10px;
 
     }
 
 
+
+
     .sb .mob>li{
 
+        color: white;
         display: flex;
         margin: 8px 0;
         padding: 8px 0;
@@ -587,14 +643,33 @@ main>.work>section{
         display: block;
         padding: 5px 0;
         text-align: center;
-        background-color: grey;
+        background-color: #1b1b1b;
         border-radius: 10px;
+        /* opacity: 1; */
+
+    }
+
+    .sb>ul>li:nth-child(1)>.mob{
+
+        background: center/cover no-repeat url('archi.jpg');
+        /* opacity: 1; */
+
+    }
+    .sb>ul>li:nth-child(2)>.mob{
+
+        background: center/cover no-repeat url('it.jpg');
+        /* opacity: .7; */
+
+    }
+    .sb>ul>li:nth-child(3)>.mob{
+        background: center/cover no-repeat url('civil1.jpg');
 
     }
 
     .sb>ul>li:hover .mob{
 
         display: block;
+        background-color: #3b3b3b;
 
     }
 
